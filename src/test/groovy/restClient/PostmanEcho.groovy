@@ -56,8 +56,8 @@ class PostmanEcho extends Specification {
         e.response.status == result
         where:
         requestType | request || result
-//        basic       | null    || UNAUTHORIZED_RESPONSE
-//        digest      | null    || UNAUTHORIZED_RESPONSE
+        basic       | null    || UNAUTHORIZED_RESPONSE
+        digest      | null    || UNAUTHORIZED_RESPONSE
         oauth1      | null    || UNAUTHORIZED_RESPONSE
     }
 
